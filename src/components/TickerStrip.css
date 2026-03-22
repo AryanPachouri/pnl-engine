@@ -1,0 +1,9 @@
+.ticker-bar { overflow: hidden; border-bottom: 1px solid rgba(255,255,255,.06); padding: 7px 0; background: rgba(255,255,255,.03); }
+.ticker-inner { display: flex; gap: 28px; animation: tickerScroll 35s linear infinite; white-space: nowrap; padding: 0 20px; width: max-content; }
+@keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.tick-item { display: inline-flex; align-items: center; gap: 7px; font-family: var(--mono); font-size: 11px; }
+.tick-sym { font-weight: 700; color: var(--blue); }
+.tick-price { color: var(--t1); }
+.tick-chg { font-size: 10px; }
+.tick-chg.pos { color: var(--green); }
+.tick-chg.neg { color: var(--red); }
